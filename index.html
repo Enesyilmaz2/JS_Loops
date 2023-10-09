@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCareer Loops</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        //"Tech Career" metnini tersten yazdırmak için:
+        var text = "Tech Career";
+        var reversedText = text.split('').reverse().join('');
+        console.log(reversedText);
+
+        //Sadece pozitif sayıların toplamını hesaplamak için:
+
+        var numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11];
+        var positiveSum = 0;
+
+        for (var i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 0) {
+                positiveSum += numbers[i];
+            }
+        }
+
+        console.log("Pozitif Sayıların Toplamı:", positiveSum);
+
+
+
+        //En büyük sayıyı bulmak için:
+
+        var numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11];
+        var maxNumber = numbers[0]; // İlk sayıyı başlangıç olarak kabul ediyoruz.
+
+        for (var i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maxNumber) {
+                maxNumber = numbers[i];
+            }
+        }
+
+        console.log("En Büyük Sayı:", maxNumber);
+
+
+
+        //1-50 arasındaki 3'e veya 5'e tam bölünebilen sayıları ve kaç adet olduğunu yazdırmak için:
+
+        var count = 0;
+
+        for (var i = 1; i <= 50; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+                console.log(i);
+                count++;
+            }
+        }
+
+        console.log("Toplam", count, "adet sayı bulundu.");
+
+
+
+    </script>
+</body>
+
+</html>
